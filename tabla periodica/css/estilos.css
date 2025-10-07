@@ -1,0 +1,124 @@
+body {
+  background-image: url(../img/itachiperiodico.png);
+  background-image: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tabla-periodica {
+  display: grid;
+  grid-template-columns: repeat(20, 60px);
+  grid-auto-rows: 80px;
+  gap: 5px;
+  justify-content: center;
+}
+
+.elemento {
+  border: 2px solid #555;
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 12px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.elemento .numero {
+  font-size: 10px;
+  text-align: left;
+}
+
+.elemento .simbolo {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.elemento .masa {
+  font-size: 10px;
+  text-align: right;
+}
+
+.elemento .nombre {
+  font-size: 9px;
+  text-align: center;
+}
+
+/* Colores por tipo */
+.nometales { background: #a8e6cf; }
+.gasesnobles { background: #ffd3b6; }
+.halogenos { background: #ffaaa5; }
+.metaloides { background: #dcedc1; }
+.alkali { background: #ff8b94; }
+.alcalinoterreos { background: #ffb347; }
+.metales { background: #b0e0e6; }
+.otrosmetales { background: #c9c9ff; }
+.actinidos { background: #8850f1; }
+
+.titulo-down {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 30px;
+  position: center;
+  left: 40px;
+  top: 0; /* o ajusta según lo necesites */
+  font-style: normal;
+  padding-left: 0px;
+  color: white;
+  text-shadow: -4.5px -1px 0 #8B4513, /*Borde Interno*/
+              1px -1px 0 #8B4513,
+              -4.5px 3.2px 0 #8B4513,
+              1px  3.2px 0 #8B4513,
+
+              -7.8px -2px 0 #FF7926,
+              4px -2px 0 #FF7926,
+              -7.8px  6px 0 #FF7926,
+              1px  6.49px 0 #FF7926;
+}
+
+.titulo-down2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 30px;
+  position: center;
+  left: 40px;
+  top: 0; /* o ajusta según lo necesites */
+  font-style: normal;
+  padding-left: 0px;
+  color: white;
+  text-shadow: -4.5px -1px 0 #0a6cff, /*Borde Interno*/
+              1px -1px 0 #0a6cff,
+              -4.5px 3.2px 0 #0a6cff,
+              1px  3.2px 0 #0a6cff,
+
+              -7.8px -2px 0 #47b5ff, 
+              4px -2px 0 #47b5ff,
+              -7.8px  6px 0 #47b5ff,
+              1px  6.49px 0 #47b5ff;
+}
+
+.periodo {
+  font-size: 10px;
+text-align: left;
+color: white;
+}
+.grupo {
+  font-size: 10px;
+text-align: left;
+color: white;
+}
+.grupo1{
+   position: relative;
+  top: -40px;
+  font-size: 10px;
+text-align: left;
+color: white;
+}
